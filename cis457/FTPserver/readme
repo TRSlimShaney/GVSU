@@ -1,0 +1,13 @@
+These Python 3.6 scripts enable an FTP file transfer of a text file.
+This project requires that the server and client scripts run in different directories so their file streams to the file system do not interfere.
+
+
+ftp_server is a multithreaded server that responds to commands given by the client(s).
+This script should be run in its own directory.
+The script can be executed by terminal:  python3 ftp_server.py
+
+
+
+ftp_client is a client that accepts commands from the user and transmits them to the server.
+This script should be run in its own directory.
+The script can be executed by terminal:  python3 ftp_client.py

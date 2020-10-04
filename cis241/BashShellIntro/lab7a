@@ -1,0 +1,96 @@
+Script started on 2019-03-15 14:04:16-0400
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7[00m$ echo "Start a terminal session"
+Start a terminal session
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7[00m$ echo "My home directroy [K[K[K[Kory is " $HOME
+My home directory is  /home/shane
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7[00m$ ls -l
+total 48
+drwxr-xr-x 2 shane shane 4096 Mar 15 11:39 [0m[01;34mcode[0m
+-rw-r--r-- 1 shane shane  273 Mar 15 11:38 findfiles1.sh
+-rw-r--r-- 1 shane shane  273 Mar 15 11:38 findfiles2.sh
+-rw-r--r-- 1 shane shane  334 Mar 15 11:38 headers
+-rw-r--r-- 1 shane shane  336 Mar 15 11:38 inboth1.sh
+-rw-r--r-- 1 shane shane  269 Mar 15 11:38 inboth2.sh
+-rw-r--r-- 1 shane shane    0 Mar 15 14:04 lab7a
+-rw-r--r-- 1 shane shane   40 Mar 15 11:38 loop1
+-rw-r--r-- 1 shane shane   61 Mar 15 11:38 loop2
+-rw-r--r-- 1 shane shane   54 Mar 15 11:38 loop3
+-rw-r--r-- 1 shane shane   57 Mar 15 11:38 loop4
+-rw-r--r-- 1 shane shane   78 Mar 15 11:38 loop5
+-rwxr--r-- 1 shane shane  388 Mar 15 11:38 [01;32mmenu[0m
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7[00m$ chmod u=x loop12[K2[K35
+chmod: cannot access 'loop135': No such file or directory
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7[00m$ chmod u=x loop135[K[K[K[Kchmod u=x loop[135]
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7[00m$ ls -l
+total 48
+drwxr-xr-x 2 shane shane 4096 Mar 15 11:39 [0m[01;34mcode[0m
+-rw-r--r-- 1 shane shane  273 Mar 15 11:38 findfiles1.sh
+-rw-r--r-- 1 shane shane  273 Mar 15 11:38 findfiles2.sh
+-rw-r--r-- 1 shane shane  334 Mar 15 11:38 headers
+-rw-r--r-- 1 shane shane  336 Mar 15 11:38 inboth1.sh
+-rw-r--r-- 1 shane shane  269 Mar 15 11:38 inboth2.sh
+-rw-r--r-- 1 shane shane    0 Mar 15 14:04 lab7a
+---xr--r-- 1 shane shane   40 Mar 15 11:38 [01;32mloop1[0m
+-rw-r--r-- 1 shane shane   61 Mar 15 11:38 loop2
+---xr--r-- 1 shane shane   54 Mar 15 11:38 [01;32mloop3[0m
+-rw-r--r-- 1 shane shane   57 Mar 15 11:38 loop4
+---xr--r-- 1 shane shane   78 Mar 15 11:38 [01;32mloop5[0m
+-rwxr--r-- 1 shane shane  388 Mar 15 11:38 [01;32mmenu[0m
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7[00m$ ls -lchmod u=x loop[135][2P135[135][C[1P loop[135]r loop[135]w loop[135]x loop[135][C[C[C[C[C[C[C[C[C[C
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7[00m$ ls -l
+total 48
+drwxr-xr-x 2 shane shane 4096 Mar 15 11:39 [0m[01;34mcode[0m
+-rw-r--r-- 1 shane shane  273 Mar 15 11:38 findfiles1.sh
+-rw-r--r-- 1 shane shane  273 Mar 15 11:38 findfiles2.sh
+-rw-r--r-- 1 shane shane  334 Mar 15 11:38 headers
+-rw-r--r-- 1 shane shane  336 Mar 15 11:38 inboth1.sh
+-rw-r--r-- 1 shane shane  269 Mar 15 11:38 inboth2.sh
+-rw-r--r-- 1 shane shane    0 Mar 15 14:04 lab7a
+-rwxr--r-- 1 shane shane   40 Mar 15 11:38 [01;32mloop1[0m
+-rw-r--r-- 1 shane shane   61 Mar 15 11:38 loop2
+-rwxr--r-- 1 shane shane   54 Mar 15 11:38 [01;32mloop3[0m
+-rw-r--r-- 1 shane shane   57 Mar 15 11:38 loop4
+-rwxr--r-- 1 shane shane   78 Mar 15 11:38 [01;32mloop5[0m
+-rwxr--r-- 1 shane shane  388 Mar 15 11:38 [01;32mmenu[0m
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7[00m$ chmod a=+w [K[K[K[K+w &[K*.sh
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7[00m$ ls -l
+total 52
+drwxr-xr-x 2 shane shane 4096 Mar 15 11:39 [0m[01;34mcode[0m
+-rw-rw-rw- 1 shane shane  273 Mar 15 11:38 findfiles1.sh
+-rw-rw-rw- 1 shane shane  273 Mar 15 11:38 findfiles2.sh
+-rw-r--r-- 1 shane shane  334 Mar 15 11:38 headers
+-rw-rw-rw- 1 shane shane  336 Mar 15 11:38 inboth1.sh
+-rw-rw-rw- 1 shane shane  269 Mar 15 11:38 inboth2.sh
+-rw-r--r-- 1 shane shane 4096 Mar 15 14:07 lab7a
+-rwxr--r-- 1 shane shane   40 Mar 15 11:38 [01;32mloop1[0m
+-rw-r--r-- 1 shane shane   61 Mar 15 11:38 loop2
+-rwxr--r-- 1 shane shane   54 Mar 15 11:38 [01;32mloop3[0m
+-rw-r--r-- 1 shane shane   57 Mar 15 11:38 loop4
+-rwxr--r-- 1 shane shane   78 Mar 15 11:38 [01;32mloop5[0m
+-rwxr--r-- 1 shane shane  388 Mar 15 11:38 [01;32mmenu[0m
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7[00m$ chmod [K[K[K[K[K[Kcd code
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7/code[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7/code[00m$ chmod goo[K=[K-r [K[K[K[Ko-r *.c
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7/code[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7/code[00m$ ls -l
+total 24
+-rw------- 1 shane shane 299 Mar 15 11:38 firstC.c
+-rw-r--r-- 1 shane shane   6 Mar 15 11:38 firstC.dat
+-rw-r--r-- 1 shane shane  44 Mar 15 11:38 firstC.out
+-rw------- 1 shane shane 151 Mar 15 11:38 hello.c
+-rw-r--r-- 1 shane shane   4 Mar 15 11:38 hello.dat
+-rw------- 1 shane shane 164 Mar 15 11:38 test.c
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7/code[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7/code[00m$ cd ..
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7[00m$ mv inboth[12].sh code
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7[00m$ cd code
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7/code[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7/code[00m$ ls
+firstC.c  firstC.dat  firstC.out  hello.c  hello.dat  inboth1.sh  inboth2.sh  test.c
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7/code[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7/code[00m$ cd ..
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7[00m$ cd d[Kcode
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7/code[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7/code[00m$ ls
+firstC.c  firstC.dat  firstC.out  hello.c  hello.dat  inboth1.sh  inboth2.sh  test.c
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7/code[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7/code[00m$ rm *.dat
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7/code[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7/code[00m$ ls
+firstC.c  firstC.out  hello.c  inboth1.sh  inboth2.sh  test.c
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7/code[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7/code[00m$ exit
+exit
+
+Script done on 2019-03-15 14:11:52-0400

@@ -1,0 +1,30 @@
+script.
+    var id = #{id}
+    var fname = #{fname}
+    var lname = #{lname}
+    var email = #{email}
+    var img = #{img}
+head
+    link(rel='stylesheet', href='/styles/bug.css')
+br
+span.user First Name:&nbsp;
+|  !{fname}
+br
+br
+span.desc Last Name:&nbsp;
+|  !{lname}
+br
+br
+span.type Email:&nbsp;
+|  !{email}
+br
+br
+span.priority Avatar:&nbsp;
+br
+img(src='/images/resized/'+img)
+br
+br
+br
+a(href='/users/'+id+'/edit') Edit |&nbsp;
+a(href='/users') Back
+

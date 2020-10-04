@@ -1,0 +1,70 @@
+<html>
+
+<body>
+  <h1 id='description'></h1>
+
+  <div id='the-list'>
+
+  </div>
+  <hr>
+
+  <select id='choices'>
+    <option value='states'>U.S. States</option>
+    <option value='provinces'>Canadian Provinces</option>
+    <option value='plays'>Shakespeare Plays</option>
+    <option value='starwars'>Star Wars Movies</option>
+  </select>
+  <button id='submit'>Submit</button>
+
+
+  <script>
+    let choices = document.getElementById('choices')
+    let title = document.getElementById('description')
+    let list = document.getElementById('the-list')
+    let submit = document.getElementById('submit').addEventListener('click', () => {
+      let selectedItem = choices.options[choices.selectedIndex].value;
+      console.log("Loading " + selectedItem);
+      let res = getList(selectedItem)
+    });
+
+    
+    function getList(item) {
+      fetch(`https://www.cis.gvsu.edu/~kurmasz/lists/${item}.json`)
+        .then((response) => {
+          return response.json()
+        })
+        .then((data) => {
+          printlist(data)
+        })
+    }
+
+    function printlist(i) {
+      console.log(i)
+      title.innerHTML = i.description
+      let special = i.special
+      let child = list.lastElementChild
+      while (child) {
+        list.removeChild(child)
+        child = list.lastElementChild
+      }
+      for (let j = 0; j < i.data.length; ++j) {
+        let element = document.createElement('P')
+        element.innerHTML = i.data[j]
+        if (i.data[j] === special) {
+          element.style.color = 'red'
+        }
+        list.appendChild(element)
+      }
+
+    }
+
+
+
+    // The list data are online here: https://cis.gvsu.edu/~kurmasz/lists/
+    // CORS is already set up.
+
+  </script>
+
+</body>
+
+</html>

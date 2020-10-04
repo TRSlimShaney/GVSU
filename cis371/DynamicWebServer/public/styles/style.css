@@ -1,0 +1,323 @@
+.rowArrowR, .rowArrowY, .rowArrowG, .rowArrowB, .rowArrowP, .rowArrowO, .rowArrowGra, .rowArrowBla, .Xbox, .pointsBox, .diceBox, .redX, .rollBoxRow, .board, .title, .atLeast, .colorRow_R, .colorRow_Y, .colorRow_G, .colorRow_B, .colorRow_P, .colorRow_O, .colorRow_Gra, .colorRow_Bla, .fractionRowTop, .fractionRowBottom, .totalsRow {
+  position: absolute;
+}
+
+.Xbox, .rollBox, .atLeast, .colorRow_R, .colorRow_Y, .colorRow_G, .colorRow_B, .colorRow_P, .colorRow_O, .colorRow_Gra, .colorRow_Bla, .numberBoxR, .numberBoxY, .numberBoxG, .numberBoxB, .numberBoxP, .numberBoxO, .numberBoxGra, .numberBoxBla, .fractionBox1, .fractionBox2, .RBox, .YBox, .GBox, .BBox, .PBox, .OBox, .GraBox, .BlaBox, .minusBox, .equalsBox {
+  border-radius: 7px;
+}
+
+.Xbox, .rollBox, .atLeast, .fractionBox1, .fractionBox2, .RBox, .YBox, .GBox, .BBox, .PBox, .OBox, .GraBox, .BlaBox, .minusBox, .equalsBox {
+  border-style: solid;
+}
+
+.rowArrowR, .rowArrowY, .rowArrowG, .rowArrowB, .rowArrowP, .rowArrowO, .rowArrowGra, .rowArrowBla {
+  left: 45px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 0 30px 50px;
+  border-color: transparent transparent transparent black;
+}
+
+.rowArrowR {
+  top: 65;
+}
+
+.rowArrowY {
+  top: 155;
+}
+
+.rowArrowG {
+  top: 250;
+}
+
+.rowArrowB {
+  top: 345;
+}
+
+.rowArrowP {
+  top: 440;
+}
+
+.rowArrowO {
+  top: 535;
+}
+
+.rowArrowGra {
+  top: 630;
+}
+
+.rowArrowBla {
+  top: 725;
+}
+
+.Xbox, .pointsBox {
+  display: block;
+  left: 90px;
+}
+
+.Xbox {
+  top: 455px;
+  background-color: white;
+  border-color: black;
+  width: 20px;
+  text-align: center;
+}
+
+.pointsBox {
+  top: 480px;
+}
+
+.diceBox {
+  display: block;
+  left: 745px;
+  top: 440px;
+  font-size: 25;
+}
+
+.redX {
+  display: block;
+  left: 745px;
+  top: 440px;
+  font-size: 25;
+  color: red;
+}
+
+.rollBoxRow {
+  display: block;
+  left: 700px;
+  top: 480px;
+}
+
+.rollBox {
+  background-color: white;
+  border-color: black;
+  font-size: 25;
+}
+
+.board {
+  top: 10px;
+  background-color: #cccccc;
+  width: 900px;
+  height: 580px;
+}
+
+.title {
+  top: 10px;
+  font-size: 25;
+  text-align: center;
+}
+
+.atLeast {
+  left: 707px;
+  top: 10px;
+  border-color: black;
+  border-width: 5px;
+  text-align: center;
+  height: 400px;
+  width: 125;
+}
+
+.colorRow_R, .colorRow_Y, .colorRow_G, .colorRow_B, .colorRow_P, .colorRow_O, .colorRow_Gra, .colorRow_Bla {
+  left: 80px;
+  padding: 15px;
+  width: 750px;
+}
+
+.colorRow_R {
+  background-color: red;
+  top: 40px;
+}
+
+.colorRow_Y {
+  background-color: #e6e600;
+  top: 135px;
+}
+
+.colorRow_G {
+  background-color: green;
+  top: 230px;
+}
+
+.colorRow_B {
+  background-color: blue;
+  top: 325px;
+}
+
+.colorRow_P {
+  background-color: purple;
+  top: 420px;
+}
+
+.colorRow_O {
+  background-color: orange;
+  top: 515px;
+}
+
+.colorRow_Gra {
+  background-color: gray;
+  top: 610;
+}
+
+.colorRow_Bla {
+  background-color: black;
+  top: 705;
+}
+
+.numberBoxR, .numberBoxY, .numberBoxG, .numberBoxB, .numberBoxP, .numberBoxO, .numberBoxGra, .numberBoxBla, .lockBoxR, .lockBoxY, .lockBoxG, .lockBoxB, .lockBoxP, .lockBoxO, .lockBoxGra, .lockBoxBla {
+  display: inline-block;
+  background-color: #f2f2f2;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  font-size: 40;
+  font-family: "Arial";
+}
+
+.lockBoxR, .lockBoxY, .lockBoxG, .lockBoxB, .lockBoxP, .lockBoxO, .lockBoxGra, .lockBoxBla {
+  font-size: 35;
+  border-radius: 50%;
+  height: 53px;
+  width: 53px;
+}
+
+.numberBoxR, .lockBoxR {
+  color: red;
+  background-color: #ffcccc;
+}
+
+.numberBoxY, .lockBoxY {
+  color: #e6e600;
+  background-color: #ffffcc;
+}
+
+.numberBoxG, .lockBoxG {
+  color: green;
+  background-color: #ccffcc;
+}
+
+.numberBoxB, .lockBoxB {
+  color: blue;
+  background-color: #ccccff;
+}
+
+.numberBoxP, .lockBoxP {
+  color: purple;
+  background-color: #f2ccff;
+}
+
+.numberBoxO, .lockBoxO {
+  color: orange;
+  background-color: #ffebcc;
+}
+
+.numberBoxGra, .lockBoxGra {
+  color: gray;
+  background-color: white;
+}
+
+.numberBoxBla, .lockBoxBla {
+  color: black;
+  background-color: white;
+}
+
+.fractionRowTop, .fractionRowBottom {
+  left: 150px;
+}
+
+.fractionBox1, .fractionBox2 {
+  display: inline-block;
+  width: 35px;
+  height: 25px;
+  background-color: white;
+  text-align: center;
+  font-size: 20;
+  font-family: "Arial";
+  border-color: black;
+  border-radius: 5px;
+}
+
+.fractionRowTop {
+  top: 440px;
+}
+
+.fractionRowBottom {
+  top: 468px;
+}
+
+.totalsRow {
+  display: inline-block;
+  top: 520px;
+  background-color: gray;
+  height: 50px;
+  text-align: left;
+  width: 900px;
+  border-top-style: solid;
+  border-top-color: gray;
+  border-top-width: 15px;
+}
+
+.RBox, .YBox, .GBox, .BBox, .PBox, .OBox, .GraBox, .BlaBox, .minusBox, .equalsBox {
+  font-size: 30;
+}
+
+.RBox, .YBox, .GBox, .BBox, .PBox, .OBox, .GraBox, .BlaBox {
+  width: 50px;
+}
+
+.plus, .minus, .equals {
+  font-size: 30;
+}
+
+.totals {
+  width: 50px;
+  font-size: 20;
+}
+
+.RBox {
+  background-color: #ffcccc;
+  border-color: red;
+}
+
+.YBox {
+  background-color: #ffffcc;
+  border-color: #e6e600;
+}
+
+.GBox {
+  background-color: #ccffcc;
+  border-color: green;
+}
+
+.BBox {
+  background-color: #ccccff;
+  border-color: blue;
+}
+
+.PBox {
+  background-color: #ffccff;
+  border-color: purple;
+}
+
+.OBox {
+  background-color: #ffebcc;
+  border-color: orange;
+}
+
+.GraBox {
+  background-color: white;
+  border-color: gray;
+}
+
+.BlaBox {
+  background-color: gray;
+  border-color: black;
+}
+
+.minusBox, .equalsBox {
+  width: 60px;
+  background-color: white;
+  border-color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

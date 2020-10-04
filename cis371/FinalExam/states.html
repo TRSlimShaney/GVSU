@@ -1,0 +1,96 @@
+<html>
+
+<body>
+  <h1>States I've Visited</h1>
+  <ul>
+    <li>Alabama</li>
+    <li>Alaska</li>
+    <li>Arizona</li>
+    <li>Arkansas</li>
+    <li>California</li>
+    <li>Colorado</li>
+    <li>Connecticut</li>
+    <li>Delaware</li>
+    <li>Florida</li>
+    <li>Georgia</li>
+    <li>Hawaii</li>
+    <li>Idaho</li>
+    <li>Illinois</li>
+    <li>Indiana</li>
+    <li>Iowa</li>
+    <li>Kansas</li>
+    <li>Kentucky</li>
+    <li>Louisiana</li>
+    <li>Maine</li>
+    <li>Maryland</li>
+    <li>Massachusetts</li>
+    <li>Michigan</li>
+    <li>Minnesota</li>
+    <li>Mississippi</li>
+    <li>Missouri</li>
+    <li>Montana</li>
+    <li>Nebraska</li>
+    <li>Nevada</li>
+    <li>New Hampshire</li>
+    <li>New Jersey</li>
+    <li>New Mexico</li>
+    <li>New York</li>
+    <li>North Carolina</li>
+    <li>North Dakota</li>
+    <li>Ohio</li>
+    <li>Oklahoma</li>
+    <li>Oregon</li>
+    <li>Pennsylvania</li>
+    <li>Rhode Island</li>
+    <li>South Carolina</li>
+    <li>South Dakota</li>
+    <li>Tennessee</li>
+    <li>Texas</li>
+    <li>Utah</li>
+    <li>Vermont</li>
+    <li>Virginia</li>
+    <li>Washington</li>
+    <li>West Virginia</li>
+    <li>Wisconsin</li>
+    <li>Wyoming</li>
+  </ul>
+
+  <p>There are <span id='count'>50</span> states left.</p>
+
+  <script>
+    let list = document.getElementsByTagName('LI')
+    let count = document.getElementById('count')
+    
+
+    for (let i = 0; i < list.length; ++i) {
+      let button = document.createElement('button')
+      button.id = `button${i}`
+      button.innerHTML = 'Delete'
+      button.addEventListener('click', function() {remove(list[i])})
+      console.log(list[i])
+      list[i].appendChild(button)
+    }
+
+    function update() {
+      count.innerHTML = count.innerHTML - 1
+    }
+
+    function remove(e) {
+      if (!(e.style.textDecoration === 'line-through')) {
+        e.style.textDecoration = 'line-through'
+        update()
+      }
+    }
+
+
+
+    // To add a strikethrough to an element
+    //element.style.textDecoration = 'line-through'
+
+    // To remove an element from the dom:
+    //parent.removeChild(element)
+  </script>
+
+</body>
+
+</html>

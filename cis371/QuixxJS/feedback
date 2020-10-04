@@ -1,0 +1,15 @@
+I'm impressed you got the two-player version working.  (As far as I know, you are the only one who attempted it.)
+The flow of the game is still confusing. (You really need to display two different boards, and and a field giving explaining why a roll isn't allowed when the roll button does nothing.)  But, still an impressive effort.
+
+A couple of minor details:
+* You should show the number of "-5" taken
+* Score is based on the *number* of x's, not their location.
+
+
+29: Basic functionality
+9: Calculates score
+10: Enforces rules
+5:  Thorough unit tests
+10: "Bonus" -- Two player game
+
+63/60

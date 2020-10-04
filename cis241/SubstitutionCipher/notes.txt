@@ -1,0 +1,52 @@
+/*  Notes:
+
+encrypt[ch - 'a'] for a -> t, key is textbook
+
+functions:
+main {
+
+char encrypt[26], decrypt[26];
+get option and key
+open input and output files 
+initializeEncryptArray (fill encrypt array)
+
+if option is 1
+	processInput(int, outf, encypt)
+else initializeDecryptArray
+	processInput(int, outf, decrypt)
+}
+
+initializeEncyptArray(char key[], char encrypt[]) {
+
+key array indexed by i, use strlen() function, or \0 used as end null placeholder
+encrypt array indexed by size
+
+for (i = 'z'; i <= 'a', i--) {
+if not found
+	copy
+}
+}
+
+processInput {
+
+//  in a loop
+read one from input file into ch
+
+if ch is lowercase
+	write encrypt[ch - 'a'] into output
+else uppercase
+	write toupper(encrypt[ch - 'A']) into output
+else
+	write ch into output
+}
+
+initializeDecryptArray {
+
+for (i = 0; i < 26; i++) {
+index = encrypt[i] - 'a';
+target = i + 'a';
+decrypt[index] = target;
+}
+}
+
+*/

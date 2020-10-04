@@ -1,0 +1,164 @@
+<html>
+
+<head>
+    <style>
+        .numberBox {
+            display: inline-block;
+            width: 25px;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid black;
+            margin: 5px;
+            background-color: lightgrey;
+        }
+        
+        #board {
+            background-color: lightgray;
+            width: 500px;
+        }
+        
+        .red {
+            background-color: red;
+        }
+        
+        .yellow {
+            background-color: yellow;
+        }
+        
+        .green {
+            background-color: green;
+        }
+        
+        .blue {
+            background-color: blue;
+        }
+        
+        .white {
+            background-color: white;
+        }
+        
+        .row {
+            border-radius: 5px;
+            display: inline-block;
+            margin: 5px;
+        }
+        
+        .die {
+            display: inline-block;
+            width: 20px;
+            border: 1px solid black;
+            border-radius: 7px;
+            text-align: center;
+            margin: 4px;
+        }
+
+		.totals {
+			display: inline-block;
+			width: 290px;
+			text-align: center;
+		}
+    </style>
+</head>
+
+<body>
+    <h1>Qwixx Starter</h1>
+
+    <div id='board'>
+	Current Player:<span class='numberBox white' id='curPlayer'>?</span>
+	Currently Viewing:<span class='numberBox white' id='curView'>?</span>
+        <div>
+            <div class='row red'>
+                <span class='numberBox' id='nB0-0'>2</span>
+                <span class='numberBox' id='nB0-1'>3</span>
+                <span class='numberBox' id='nB0-2'>4</span>
+                <span class='numberBox' id='nB0-3'>5</span>
+                <span class='numberBox' id='nB0-4'>6</span>
+				<span class='numberBox' id='nB0-5'>7</span>
+				<span class='numberBox' id='nB0-6'>8</span>
+				<span class='numberBox' id='nB0-7'>9</span>
+				<span class='numberBox' id='nB0-8'>10</span>
+				<span class='numberBox' id='nB0-9'>11</span>
+				<span class='numberBox' id='nB0-10'>12</span>
+				<span class='numberBox' id='nB0-11'>&#128274;</span>
+            </div>
+        </div>
+        <div>
+            <div class='row yellow'>
+                <span class='numberBox' id='nB1-0'>2</span>
+                <span class='numberBox' id='nB1-1'>3</span>
+                <span class='numberBox' id='nB1-2'>4</span>
+                <span class='numberBox' id='nB1-3'>5</span>
+                <span class='numberBox' id='nB1-4'>6</span>
+                <span class='numberBox' id='nB1-5'>7</span>
+                <span class='numberBox' id='nB1-6'>8</span>
+                <span class='numberBox' id='nB1-7'>9</span>
+                <span class='numberBox' id='nB1-8'>10</span>
+                <span class='numberBox' id='nB1-9'>11</span>
+                <span class='numberBox' id='nB1-10'>12</span>
+				<span class='numberBox' id='nB1-11'>&#128274;</span>
+            </div>
+        </div>
+
+        <div>
+            <div class='row green'>
+                <span class='numberBox' id='nB2-0'>12</span>
+                <span class='numberBox' id='nB2-1'>11</span>
+                <span class='numberBox' id='nB2-2'>10</span>
+                <span class='numberBox' id='nB2-3'>9</span>
+                <span class='numberBox' id='nB2-4'>8</span>
+                <span class='numberBox' id='nB2-5'>7</span>
+                <span class='numberBox' id='nB2-6'>6</span>
+                <span class='numberBox' id='nB2-7'>5</span>
+                <span class='numberBox' id='nB2-8'>4</span>
+                <span class='numberBox' id='nB2-9'>3</span>
+                <span class='numberBox' id='nB2-10'>2</span>
+				<span class='numberBox' id='nB2-11'>&#128274;</span>
+            </div>
+        </div>
+
+        <div>
+            <div class='row blue'>
+                <span class='numberBox' id='nB3-0'>12</span>
+                <span class='numberBox' id='nB3-1'>11</span>
+                <span class='numberBox' id='nB3-2'>10</span>
+                <span class='numberBox' id='nB3-3'>9</span>
+                <span class='numberBox' id='nB3-4'>8</span>
+                <span class='numberBox' id='nB3-5'>7</span>
+                <span class='numberBox' id='nB3-6'>6</span>
+                <span class='numberBox' id='nB3-7'>5</span>
+                <span class='numberBox' id='nB3-8'>4</span>
+                <span class='numberBox' id='nB3-9'>3</span>
+                <span class='numberBox' id='nB3-10'>2</span>
+				<span class='numberBox' id='nB3-11'>&#128274;</span>
+            </div>
+        </div>
+
+        <div>
+            <span class='die white' id='die-w0'>x</span>
+            <span class='die white' id='die-w1'>x</span>
+            <span class='die red' id='die-0'>x</span>
+            <span class='die yellow' id='die-1'>x</span>
+            <span class='die green' id='die-2'>x</span>
+            <span class='die blue' id='die-3'>x</span>
+        </div>
+		<div>
+			<div class='totals'>totals:
+				<span class='die red' id='0-Tot'>&nbsp;&nbsp;&nbsp;</span>+
+				<span class='die yellow' id='1-Tot'>&nbsp;&nbsp;&nbsp;</span>+
+				<span class='die green' id='2-Tot'>&nbsp;&nbsp;&nbsp;</span>+
+				<span class='die blue' id='3-Tot'>&nbsp;&nbsp;&nbsp;</span>-
+				<span class='die white' id='0-wTot'>&nbsp;&nbsp;&nbsp;</span>=
+				<span class='die white' id='1-wTot'>&nbsp;&nbsp;&nbsp;</span>
+			</div>
+			<button id='pass'>Pass</button>
+			<button id='roll'>Roll</button>
+			<button id='view'>View</button>
+			<button id='done'>Done</button>
+		</div>
+    </div>
+
+    <script type="module" src='Qwixx.js'></script>
+
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+Peter Coad:Java Design:2010
+Cay Hoarstmann:Core Java - Vol 1:2011
+Cay Hoarstmann:Core Java - Vol 2:2012
+Mark Sobell:A Practical Guide to Linux:2014

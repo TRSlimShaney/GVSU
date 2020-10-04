@@ -1,0 +1,76 @@
+<html>
+
+<head>
+  <style>
+    .red {
+      color: red;
+      margin-left: 5px
+    }
+
+    .green {
+      color: green;
+      margin-left: 5px
+    }
+
+    .blue {
+      color: blue;
+      margin-left: 5px
+    }
+
+    .summary.final {
+      color: purple
+    }
+
+    #s2 .summary {
+      text-decoration: line-through;
+    }
+
+    #s1 .summary {
+      text-decoration: line-through;
+    }
+
+    /*
+
+Complete each of the tasks below using the simplest CSS rule possible.
+
+1. Add spacing of 5px between buttons
+2. Set the text of final summaries (and only the final summaries) to be colored purple
+3. Make the text of the summaries inside the sections appear with a strikethrough. (Hint:  use `text-decoration:   line-through`)
+*/
+  </style>
+</head>
+
+<body>
+  <section id='s1'>
+    <h1>Section 1</h1>
+    <ul>
+      <li class='red'>Red Text</li>
+      <li class='green'>Green text</li>
+      <li class='blue'>Blue text</li>
+      <li class='summary'>Summary</li>
+    </ul>
+    <button class='red'>Red</button><button class='green'>Green</button><button class='blue'>Blue</button>
+  </section>
+  <section id='s2'>
+    <h1>Section 2</h1>
+    <ul>
+      <li class='red'>Text line 1</li>
+      <li class='green'>Text line 2</li>
+      <li class='blue'>Text line 3</li>
+      <li class='summary'>Summary</li>
+    </ul>
+    <button class='red'>Red</button><button class='green'>Green</button><button class='blue'>Blue</button>
+  </section>
+
+  <div>
+    <ul>
+      <li class='summary'>Not final summary</li>
+      <li class='summary final'>Final Summary 1</li>
+      <li class='summary final'>Final Summary 2</li>
+      <li class='summary final'>Final Summary 3</li>
+    </ul>
+  </div>
+
+</body>
+
+</html>

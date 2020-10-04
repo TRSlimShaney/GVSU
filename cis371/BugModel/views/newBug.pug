@@ -1,0 +1,50 @@
+script.
+    var users = JSON.stringify(users)
+head
+    link(rel='stylesheet', href='/styles/newBug.css')
+body
+    span.pageTitle Add a bug:
+    br
+    br
+    form(action='/bugs/create', method='POST')
+        span.title Title:
+        br
+        input(type='text', name='title', placeholder='', required='required')
+        br
+        span.user User:
+        br
+        select(name='user')
+            each user in users
+                option(value=user.id) !{user.fname} !{user.lname}
+        br
+        span.desc Description:
+        br
+        input(type='text', name='desc', placeholder='', required='required')
+        br
+        span.type Type:
+        br
+        select(name='type')
+            option(value='Issue') Issue
+            option(value='Enhancement') Enhancement
+            option(value='Feature') Feature
+        br
+        span.priority Priority:
+        br
+        select(name='priority')
+            option(value='Low') Low
+            option(value='Medium') Medium
+            option(value='High') High
+        br
+        span.status Status:
+        br
+        select(name='status')
+            option(value='Open') Open
+            option(value='Closed') Closed
+            option(value='Monitor') Monitor
+        br
+        br
+        br
+        input(type='submit', value='Submit')
+        br
+        br
+        a(href='/bugs') Back

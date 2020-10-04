@@ -1,0 +1,230 @@
+<!-- Put your name here -->
+<html>
+
+<head>
+<style>
+    .rowArrowR, .rowArrowY, .rowArrowG, .rowArrowB, .Xbox, .pointsBox, .diceBox, .redX, .rollBoxRow, .board, .title, .atLeast, .colorRow_red, .colorRow_yellow, .colorRow_green, .colorRow_blue, .fractionRowTop, .fractionRowBottom, .totalsRow {position:absolute;}
+    .Xbox, .rollBox, .atLeast, .colorRow_red, .colorRow_yellow, .colorRow_green, .colorRow_blue, .numberBoxR, .numberBoxY, .numberBoxG, .numberBoxB, .fractionBox1, .fractionBox2, .redBox, .yellowBox, .greenBox, .blueBox, .purpleBox, .orangeBox, .minusBox, .equalsBox {border-radius:7px;}
+    .Xbox, .rollBox, .atLeast, .fractionBox1, .fractionBox2, .redBox, .yellowBox, .greenBox, .blueBox, .purpleBox, .orangeBox, .minusBox, .equalsBox {border-style:solid;}
+	.rowArrowR, .rowArrowY, .rowArrowG, .rowArrowB {left:45px;width:0;height:0;border-style:solid;border-width:30px 0 30px 50px;border-color:transparent transparent transparent black;}
+		.rowArrowR {top:65;}
+		.rowArrowY {top:155;}
+		.rowArrowG {top:250;}
+		.rowArrowB {top:345;}
+	.Xbox, .pointsBox {display:block;left:90px;}
+		.Xbox {top:455px;background-color:white;border-color:black;width:20px;text-align:center;}
+		.pointsBox {top:480px;}
+	.diceBox, .redX {display:block;left:745px;top:440px;font-size:25;}
+		.redX {color:red;}
+	.rollBoxRow{display:block;left:700px;top:480px;}
+		.rollBox {background-color:white;border-color:black;font-size:25;}
+	.board {top:10px;background-color:#cccccc;width:900px;height:580px;}
+		.title {top:10px;font-size:25;text-align:center;}
+		.atLeast {left:707px;top:10px;border-color:black;border-width:5px;text-align:center;height:400px;width:125;}
+		.colorRow_red, .colorRow_yellow, .colorRow_green, .colorRow_blue {left:80px;padding:15px;width:750px;}
+			.colorRow_red {background-color:red;top:40px;}
+			.colorRow_yellow {background-color:#e6e600;top:135px;}
+			.colorRow_green {background-color:green;top:230px;}
+			.colorRow_blue {background-color:blue;top:325px;}
+		.numberBoxR, .numberBoxY, .numberBoxG, .numberBoxB, .lockBoxR, .lockBoxY, .lockBoxG, .lockBoxB {display:inline-block;background-color: #f2f2f2;height:50px;width:50px;text-align:center;font-size:40;font-family:"Arial";}
+		.numberBoxR, .numberBoxY, .numberBoxG, .numberBoxB {}
+		.lockBoxR, .lockBoxY, .lockBoxG, .lockBoxB {font-size:35;border-radius:50%;height:53px;width:53px;}
+			.numberBoxR, .lockBoxR {color:red;background-color:#ffcccc;}
+			.numberBoxY, .lockBoxY {color:#e6e600;background-color:#ffffcc;}
+			.numberBoxG, .lockBoxG {color:green;background-color:#ccffcc;}
+			.numberBoxB, .lockBoxB {color:blue;background-color:#ccccff;}
+		.fractionRowTop, .fractionRowBottom {left:150px;}
+			.fractionBox1, .fractionBox2 {display:inline-block;width:35px;height:25px;background-color: white;text-align:center;font-size:20;font-family:"Arial";border-color:black;border-radius:5px;}
+		.fractionRowTop {top:440px;}
+			.fractionBox1 {}
+		.fractionRowBottom {top:468px;}
+			.fractionBox2 {}
+		.totalsRow {display:inline-block;top:520px;background-color:gray;height:50px;text-align:left;width:900px;border-top-style:solid;border-top-color:gray;border-top-width:15px;}
+			.redBox, .yellowBox, .greenBox, .blueBox, .purpleBox, .orangeBox, .minusBox, .equalsBox {font-size:30;}
+			.redBox, .yellowBox, .greenBox, .blueBox, .purpleBox, .orangeBox {width:50px;}
+			.plus, .minus, .equals {font-size:30;}
+			.totals {width:50px;font-size:20;}
+			.redBox {background-color: #ffcccc;border-color: red;}
+			.yellowBox {background-color: #ffffcc;border-color:#e6e600;}
+			.greenBox {background-color: #ccffcc;border-color: green;}
+			.blueBox {background-color:#ccccff;border-color:blue;}
+			.purpleBox {background-color:#ffccff;border-color:purple;}
+			.orangeBox {background-color:#ffebcc;border-color:orange;}
+			.minusBox {width:60px;background-color:white;border-color:black;}
+			.equalsBox {width:60px;background-color:white;border-color:black;}
+</style>
+</head>
+
+<body>
+    <div class='board'>
+		<span class='title'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QUIXX</span>
+        <div class='colorRow_red'>
+            <span class='numberBoxR'>2</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxR'>3</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxR'>4</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxR'>5</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxR'>6</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxR'>7</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxR'>8</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxR'>9</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxR'>10</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxR'>11</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxR'>12</span>
+			<span class='space'>&nbsp;</span>
+            <span class='lockBoxR'>&#128274;</span>
+        </div>
+
+        <div class='colorRow_yellow'>
+            <span class='numberBoxY'>2</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxY'>3</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxY'>4</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxY'>5</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxY'>6</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxY'>7</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxY'>8</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxY'>9</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxY'>10</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxY'>11</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxY'>12</span>
+			<span class='space'>&nbsp;</span>
+            <span class='lockBoxY'>&#128274</span>
+        </div>
+
+        <div class='colorRow_green'>
+            <span class='numberBoxG'>12</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxG'>11</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxG'>10</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxG'>9</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxG'>8</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxG'>7</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxG'>6</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxG'>5</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxG'>4</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxG'>3</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxG'>2</span>
+			<span class='space'>&nbsp;</span>
+            <span class='lockBoxG'>&#128274</span>
+        </div>
+
+        <div class='colorRow_blue'>
+            <span class='numberBoxB'>12</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxB'>11</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxB'>10</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxB'>9</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxB'>8</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxB'>7</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxB'>6</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxB'>5</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxB'>4</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxB'>3</span>
+			<span class='space'>&nbsp;</span>
+            <span class='numberBoxB'>2</span>
+			<span class='space'>&nbsp;</span>
+            <span class='lockBoxB'>&#128274</span>
+        </div>
+		<span class='atLeast'>At Least 5 X's</span>
+		<br>
+		<br>
+		<div class='fractionRowTop'>
+			<span class='fractionBox1'>1x</span>
+			<span class='fractionBox1'>2x</span>
+			<span class='fractionBox1'>3x</span>
+			<span class='fractionBox1'>4x</span>
+			<span class='fractionBox1'>5x</span>
+			<span class='fractionBox1'>6x</span>
+			<span class='fractionBox1'>7x</span>
+			<span class='fractionBox1'>8x</span>
+			<span class='fractionBox1'>9x</span>
+			<span class='fractionBox1'>10x</span>
+			<span class='fractionBox1'>11x</span>
+			<span class='fractionBox1'>12x</span>
+		</div>
+		<div class='fractionRowBottom'>
+			<span class='fractionBox2'>1</span>
+			<span class='fractionBox2'>3</span>
+			<span class='fractionBox2'>6</span>
+			<span class='fractionBox2'>10</span>
+			<span class='fractionBox2'>12</span>
+			<span class='fractionBox2'>21</span>
+			<span class='fractionBox2'>28</span>
+			<span class='fractionBox2'>36</span>
+			<span class='fractionBox2'>45</span>
+			<span class='fractionBox2'>55</span>
+			<span class='fractionBox2'>66</span>
+			<span class='fractionBox2'>78</span>
+		</div>
+		<div class='totalsRow'>
+			<span class='totals'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;totals</span>
+			<span class='redBox'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<span class='plus'>+</span>
+			<span class='yellowBox'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<span class='plus'>+</span>
+			<span class='greenBox'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<span class='plus'>+</span>
+			<span class='blueBox'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<span class='plus'>+</span>
+			<span class='purpleBox'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<span class='plus'>+</span>
+			<span class='orangeBox'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<span class='minus'>-</span>
+			<span class='minusBox'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<span class='equals'>=</span>
+			<span class='equalsBox'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		</div>
+    </div>
+	<span class='rowArrowR'></span>
+	<span class='rowArrowY'></span>
+	<span class='rowArrowG'></span>
+	<span class='rowArrowB'></span>
+	<span class='Xbox'>X</span>
+	<span class='pointsBox'>points</span>
+	<span class='diceBox'>&#127922;&nbsp;=&nbsp;-5</span>
+	<span class='redX'>&#10007;</span>
+	<div class='rollBoxRow'>
+		<span class='rollBox'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		<span class='rollBox'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		<span class='rollBox'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		<span class='rollBox'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+//  Shane Stacy Dynamic Quixx Template in PUG
+
+
+
+
+//  change these to make the page dynamic to your liking.  Valid choices are 4->16 for row, and 12-40 for col.
+- var row = 16
+- var col = 12
+
+
+
+//  global data
+- var lowerFraction = new Array(1, 3, 6, 10, 12, 21, 28, 36, 45, 55, 66, 78, 91, 105, 120, 136, 153, 171, 190, 210, 231, 253, 276, 300, 325, 351, 378, 406, 435, 465, 496, 528, 561, 595, 630, 666, 703, 741, 780, 820)
+- var rowColors = new Array("R", "Y", "G", "B", "P", "O", "Gra", "Bla", "R", "Y", "G", "B", "P", "O", "Gra", "Bla")
+head
+  link(rel='stylesheet' href='stylesheet.css')
+div(class='board', style={width:(col*65)+120, height:(row*93)+170})
+  span.title &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QUIXX
+  - for (var z = 0; z < row/2; z++) {
+    div(class='colorRow_'+rowColors[z], style={width:(col*62), top:(z*95)+35})
+      - for (var i = 2; i < col + 1; i++) {
+        span(class="numberBox"+rowColors[z]) !{i}
+        span.space &nbsp;&nbsp;&nbsp;
+      - }
+      span(class="lockBox"+rowColors[z]) &#128274;
+  - }
+  - for (var z = row/2; z < row; z++) {
+    div(class='colorRow_'+rowColors[z], style={width:(col*62), top:(z*95)+35})
+      - for (var i = col; i > 1; i--) {
+        span(class="numberBox"+rowColors[z], id='row'+z+'-col'+i) !{i}
+        span.space &nbsp;&nbsp;&nbsp;
+      - }
+      span(class="lockBox"+rowColors[z]) &#128274;
+  - }
+  span(class='atLeast', style={left:(col*62)-37, height:(row*95)+20}) At Least 5 X&apos;s
+  br
+  br
+  div(class='fractionRowTop', style={top:(row*93)+80})
+    - for (var i = 1; i < col + 1; i++) {
+      span.fractionBox1 !{i}x
+      span.space &nbsp;
+    - }
+  div(class='fractionRowBottom', style={top:(row*93)+108})
+    - for (var i = 0; i < col; i++) {
+      - var c = lowerFraction[i]
+      span.fractionBox2 !{c}
+      span.space &nbsp;
+    - }
+  div(class='totalsRow', style={width:(row*85)+250, top:(row*93)+170})
+    span.totals &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;totals
+    span.space &nbsp;
+    span.RBox &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    - for (var i = 1; i < row; i++) {
+      span.space &nbsp;
+      span.plus +
+      span.space &nbsp;
+      span(class=rowColors[i]+'Box') &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    - }
+    span.space &nbsp;
+    span.minus -
+    span.space &nbsp;
+    span.minusBox &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    span.space &nbsp;
+    span.equals =
+    span.space &nbsp;
+    span.equalsBox &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- for (var i = 0; i < row; i++) {
+  span(class='rowArrow'+rowColors[i], style={top: ((i + 1) * 95) - 35})
+- }
+span(class='Xbox', style={top:(row*93)+95}) X
+span(class='pointsBox', style={top:(row*93)+125}) points
+span(class='diceBox', style={top:(row*93)+80, left:(col*45)+200}) &#127922;&nbsp;=&nbsp;-5
+span(class='redX', style={top:(row*93)+80, left:(col*45)+200}) &cross;
+div(class='rollBoxRow', style={top:(row*93)+120, left:(col*45)+155})
+  - for (var i = 0; i < 4; i++) {
+    span.rollBox &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    span.space &nbsp;
+  - }

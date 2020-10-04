@@ -1,0 +1,29 @@
+head
+    link(rel='stylesheet', href='/styles/newBug.css')
+body
+    span.pageTitle Add a user:
+    br
+    br
+    form(action='/users/create', enctype='multipart/form-data', method='POST')
+        span.title First Name:
+        br
+        input(type='text', name='fname', placeholder='', required='required')
+        br
+        span.user Last Name:
+        br
+        input(type='text', name='lname', placeholder='', required='required')
+        br
+        span.desc Email:
+        br
+        input(type='email', name='email', placeholder='', size=30, required='required')
+        br
+        span.type Avatar:
+        br
+        input(type='file', accept='image/*', name='img', value='Upload Avatar')
+        br
+        br
+        br
+        input(type='submit', value='Submit')
+        br
+        br
+        a(href='/users') Back

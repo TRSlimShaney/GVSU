@@ -1,0 +1,10 @@
+Shane,M,989,1990
+Shannon,M,999,1990
+Mary,F,7065,1880
+Beth,F,2000,1780
+Elizabeth,F,2,0
+Michael,M,1,5
+Ted,M,10,15
+Ed,M,3,6
+Rebecca,F,9999,9999
+Katherine,F,9989,9989

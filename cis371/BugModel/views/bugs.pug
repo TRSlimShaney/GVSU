@@ -1,0 +1,32 @@
+script.
+    var bugs = JSON.stringify(bugs)
+head
+    link(rel='stylesheet', href='/styles/bugs.css')
+span.pageTitle Listing Bugs
+br
+br
+table
+    tr
+        th.title Title
+        th.user User
+        th.desc Description
+        th.type Issue Type
+        th.priority Priority
+        th.status Status
+        th
+    each bug in bugs
+        tr
+            th.rowText !{bug.title}
+            th.rowText !{bug.user.fname}&nbsp;!{bug.user.lname}
+            th.rowText !{bug.desc}
+            th.rowText !{bug.type}
+            th.rowText !{bug.priority}
+            th.rowText !{bug.status}
+            th
+                a(href='/bugs/' + bug.id) Show |
+                a(href='/bugs/' + bug.id + '/edit') &nbsp;Edit |
+                a(href='/bugs/' + bug.id + '/destroy') &nbsp;Destroy
+br
+a(href='/bugs/newBug') New Bug
+br
+a(href='/users') Go to Users

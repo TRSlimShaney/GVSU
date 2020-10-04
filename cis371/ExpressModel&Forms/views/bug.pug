@@ -1,0 +1,37 @@
+script.
+    var id = #{id}
+    var title = #{title}
+    var user = #{user}
+    var desc = #{desc}
+    var type = #{type}
+    var priority = #{priority}
+    var status = #{status}
+head
+    link(rel='stylesheet', href='/styles/bug.css')
+span.title Title:&nbsp;
+|  !{title}
+br
+br
+span.user User:&nbsp;
+|  !{user}
+br
+br
+span.desc Description:&nbsp;
+|  !{desc}
+br
+br
+span.type Type:&nbsp;
+|  !{type}
+br
+br
+span.priority Priority:&nbsp;
+|  !{priority}
+br
+br
+span.status Status:&nbsp;
+|  !{status}
+br
+br
+a(href='/bugs/'+id+'/edit') Edit |&nbsp;
+a(href='/bugs') Back
+

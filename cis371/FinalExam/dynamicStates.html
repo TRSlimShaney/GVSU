@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <h1>States I've Visited</h1>
+ 
+    <div id='the-list'>
+      
+    </div>
+
+    
+    <script>
+      let states = ['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','Florida','Georgia','Guam','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virgin Island','Virginia','Washington','West Virginia','Wisconsin','Wyoming']
+
+      let list = document.createElement('UL')
+
+      for (let i = 0; i < states.length; ++i) {
+        let li = document.createElement('LI')
+        li.innerHTML = states[i]
+        list.appendChild(li)
+      }
+
+      let theList = document.getElementById('the-list')
+      theList.appendChild(list)
+
+    </script>
+
+  </body>
+</html>

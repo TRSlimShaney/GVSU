@@ -1,0 +1,21 @@
+Script started on 2019-03-15 14:13:46-0400
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7[00m$ class="CIS241 W19"
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7[00m$ echo "My class is [K " $class[C[C[C[C
+My class is  CIS241 W19
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7[00m$ grep -h "if test" f*[12]*
+[01;31m[Kif test[m[K $# -eq 0
+[01;31m[Kif test[m[K $# -eq 2
+[01;31m[Kif test[m[K $# -eq 0
+[01;31m[Kif test[m[K $# -eq 2
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7[00m$ grep -h "if test" f*[12]* | sort
+if test $# -eq 0
+if test $# -eq 0
+if test $# -eq 2
+if test $# -eq 2
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7[00m$ grep -h "if test" f*[12]* | sort | uniq
+if test $# -eq 0
+if test $# -eq 2
+]0;shane@shane-LinuxMintXPS: ~/Documents/C Code/lab7[01;32mshane@shane-LinuxMintXPS[00m:[01;34m~/Documents/C Code/lab7[00m$ exit
+exit
+
+Script done on 2019-03-15 14:15:38-0400

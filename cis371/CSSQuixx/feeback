@@ -1,0 +1,11 @@
+The board looks very nice.
+However, the CSS is almost impossible to read.
+
+20/20
+
+Part 3:
+* Nice use of pug
+* An occasional &nbsp; can be helpful.  When you find yourself using a lot of them,
+  it indicates a design / CSS issue.
+
+15/15

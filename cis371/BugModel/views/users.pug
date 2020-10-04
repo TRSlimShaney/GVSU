@@ -1,0 +1,29 @@
+script.
+    var users = JSON.stringify(users)
+head
+    link(rel='stylesheet', href='/styles/bugs.css')
+span.pageTitle Listing Users
+br
+br
+table
+    tr
+        th.title First Name
+        th.user Last Name
+        th.desc Email
+        th.type Avatar
+        th
+    each user in users
+        tr
+            th.rowText !{user.fname}
+            th.rowText !{user.lname}
+            th.rowText !{user.email}
+            th.rowText
+                img(src='/images/resized/'+user.img)
+            th
+                a(href='/users/' + user.id) Show |
+                a(href='/users/' + user.id + '/edit') &nbsp;Edit |
+                a(href='/users/' + user.id + '/destroy') &nbsp;Destroy
+br
+a(href='/users/newUser') New User
+br
+a(href='/bugs') Go to Bugs

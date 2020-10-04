@@ -1,0 +1,57 @@
+script.
+    var id = #{id}
+    var title = #{title}
+    var user = JSON.stringify(user)
+    var desc = #{desc}
+    var type = #{type}
+    var priority = #{priority}
+    var status = #{status}
+    var users = JSON.stringify(users)
+head
+    link(rel='stylesheet', href='/styles/editBug.css')
+body
+    span.pageTitle Edit this bug:
+    br
+    br
+    form(action='/bugs/' + id + '/update', method='POST')
+        span.title Title:
+        br
+        input(type='text', name='title', placeholder=title, required='required')
+        br
+        span.user User:
+        br
+        select(name='user')
+            each person in users
+                option(value=person.id , selected=(person.id == id)) !{person.fname} !{person.lname}
+        br
+        span.desc Description:
+        br
+        input(type='text', name='desc', placeholder=desc, required='required')
+        br
+        span.type Type:
+        br
+        select(name='type')
+            option(value='Issue', selected=('Issue' == type)) Issue
+            option(value='Enhancement', selected=('Enhancement' == type)) Enhancement
+            option(value='Feature', selected=('Feature' == type)) Feature
+        br
+        span.priority Priority:
+        br
+        select(name='priority')
+            option(value='Low', selected=('Low' == priority)) Low
+            option(value='Medium', selected=('Medium' == priority)) Medium
+            option(value='High', , selected=('High' == priority)) High
+        br
+        span.status Status:
+        br
+        select(name='status')
+            option(value='Open', selected=('Open' == status)) Open
+            option(value='Closed', selected=('Closed' == status)) Closed
+            option(value='Monitor', selected=('Monitor' == status)) Monitor
+        br
+        br
+        br
+        input(type='submit', value='Submit')
+        br
+        br
+        a(href='/bugs') Back
