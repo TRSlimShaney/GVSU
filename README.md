@@ -28,7 +28,8 @@ cis457 -> Data Communications & Computer Networking
 mth325 -> Discrete Structures II
 
 
-coming soon:
+
+not yet available:
 
 cis357 -> Mobile-App Development
 
