@@ -27,12 +27,10 @@ cis457 -> Data Communications & Computer Networking
 
 mth325 -> Discrete Structures II
 
+cis458 -> System Security
+
 
 
 not yet available:
 
 cis357 -> Mobile-App Development
-
-cis430 -> Cyber Forensics
-
-cis458 -> System Security
